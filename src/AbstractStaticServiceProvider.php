@@ -24,7 +24,7 @@ abstract class AbstractStaticServiceProvider extends AbstractServiceProvider
      *
      * @var callable[]
      */
-    protected $serviceDefinitions = array();
+    protected $serviceDefinitions = [];
 
     /**
      * {@inheritdoc}
@@ -50,7 +50,7 @@ abstract class AbstractStaticServiceProvider extends AbstractServiceProvider
     {
         // Checking only format, because the definition may become available later
         if (!is_callable($definition, true)) {
-            throw new InvalidArgumentException($this->__('The definition for service with ID "%1$s" must be a callable', array($id)));
+            throw new InvalidArgumentException($this->__('The definition for service with ID "%1$s" must be a callable', [$id]));
         }
 
         $this->serviceDefinitions[$id] = $definition;

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "dbc88a25efc37acf31c0106ef3aae6c2",
+    "content-hash": "e877b97e88b0e8572ebf2441acf8dd06",
     "packages": [
         {
             "name": "dhii/i18n-helper-base",
@@ -114,23 +114,24 @@
         },
         {
             "name": "dhii/php-cs-fixer-config",
-            "version": "dev-php-5.3",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/php-cs-fixer-config.git",
-                "reference": "ee3cc6c906a1aa4dca2bcbfcfef684dbd1ebb8ca"
+                "reference": "aef10e47f184ae206ff13c847ccc634b4ae87635"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/php-cs-fixer-config/zipball/ee3cc6c906a1aa4dca2bcbfcfef684dbd1ebb8ca",
-                "reference": "ee3cc6c906a1aa4dca2bcbfcfef684dbd1ebb8ca",
+                "url": "https://api.github.com/repos/Dhii/php-cs-fixer-config/zipball/aef10e47f184ae206ff13c847ccc634b4ae87635",
+                "reference": "aef10e47f184ae206ff13c847ccc634b4ae87635",
                 "shasum": ""
             },
             "require": {
                 "friendsofphp/php-cs-fixer": ">=1.11 <1.12",
-                "php": "^5.3 | ^7.0"
+                "php": "^5.4 | ^7.0"
             },
             "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
                 "phpunit/phpunit": "^4.8"
             },
             "type": "library",
@@ -150,7 +151,7 @@
                 }
             ],
             "description": "A default PHP CS Fixer config implementation",
-            "time": "2016-09-03 14:45:03"
+            "time": "2016-09-03T14:20:46+00:00"
         },
         {
             "name": "doctrine/instantiator",

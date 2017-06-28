@@ -66,7 +66,7 @@ abstract class AbstractServiceProvider
      */
     protected function _m($methodName)
     {
-        return array($this, $methodName);
+        return [$this, $methodName];
     }
 
     /**
@@ -78,9 +78,9 @@ abstract class AbstractServiceProvider
      *
      * @return callable[] An array of callable service definitions mapped using prefixed service IDs.
      */
-    protected function _prepare(array $services, array $additional = array())
+    protected function _prepare(array $services, array $additional = [])
     {
-        $prepared = array();
+        $prepared = [];
 
         foreach ($services as $_sid => $_method) {
             $prepared[$this->_p($_sid)] = $this->_m($_method);
