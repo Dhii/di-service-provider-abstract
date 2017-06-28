@@ -1,5 +1,5 @@
 {
-    "name": "Dhii/service-provider-abstract",
+    "name": "dhii/di-service-provider-abstract",
     "description": "Common functionality for service providers",
     "type": "library",
     "license": "MIT",
